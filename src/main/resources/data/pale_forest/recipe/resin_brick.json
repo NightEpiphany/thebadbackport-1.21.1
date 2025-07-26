@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "pale_forest:resin_clump"
+  },
+  "result": {
+    "id": "pale_forest:resin_brick"
+  }
+}

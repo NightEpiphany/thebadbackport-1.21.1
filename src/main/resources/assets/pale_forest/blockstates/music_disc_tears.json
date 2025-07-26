@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pale_forest:block/music_disc_tears"
+    },
+    "facing=south": {
+      "model": "pale_forest:block/music_disc_tears",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pale_forest:block/music_disc_tears",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "pale_forest:block/music_disc_tears",
+      "y": 90
+    }
+  }
+}

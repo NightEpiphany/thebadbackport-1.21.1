@@ -1,0 +1,7 @@
+{
+  "parent": "pale_forest:block/flowerbed_1",
+  "textures": {
+    "flowerbed": "pale_forest:item/leaf_litter",
+    "stem": "pale_forest:block/empty"
+  }
+}

@@ -1,0 +1,16 @@
+﻿{
+  "variants": {
+    "axis=x": {
+      "model": "pale_forest:block/mossy_pale_oak_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "pale_forest:block/mossy_pale_oak_log"
+    },
+    "axis=z": {
+      "model": "pale_forest:block/mossy_pale_oak_log_horizontal",
+      "x": 90
+    }
+  }
+}

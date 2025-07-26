@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"id": "pale_forest:conjugate_apple"
+		},
+		"title": {"translate":"advancements.farming.consume_conjugate_apple.title"},
+		"description": {"color":"green","translate":"advancements.farming.consume_conjugate_apple.description"},
+		"announce_to_chat": true
+	},
+	"parent": "minecraft:husbandry/plant_seed",		
+	"criteria": {
+		"consume_conjugate_apple": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"pale_forest:conjugate_apple"
+					]
+				}
+			}
+		}
+	},
+  "requirements": [
+    [
+      "consume_conjugate_apple"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

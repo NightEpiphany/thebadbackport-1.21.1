@@ -1,0 +1,1 @@
+$execute as @e[nbt={leash:{UUID:$(UUID)}}] run data modify entity @s leash.UUID set from entity @n[type=firework_rocket,nbt={Owner:$(UUID),Life:0}] UUID

@@ -1,0 +1,6 @@
+{
+  "parent": "pale_forest:block/mossy_carpet_side",
+  "textures": {
+    "side": "pale_forest:block/pale_moss_carpet_side_tall"
+  }
+}

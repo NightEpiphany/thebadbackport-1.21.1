@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": "minecraft:lead"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "hyperleash:leaded_entity"
+	}
+}

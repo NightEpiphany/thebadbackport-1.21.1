@@ -1,0 +1,32 @@
+﻿{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dried_ghast": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pale_forest:dried_ghast"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pale_forest:blue_harness"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dried_ghast"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pale_forest:blue_harness"
+    ]
+  }
+}

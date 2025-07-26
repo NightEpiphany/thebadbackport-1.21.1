@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "pale_forest:block/open_eyeblossom"
+    },
+    "lit=true": {
+      "model": "pale_forest:block/open_eyeblossom_lit"
+    }
+  }
+}

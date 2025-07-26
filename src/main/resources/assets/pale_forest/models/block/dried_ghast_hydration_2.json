@@ -1,0 +1,13 @@
+{
+  "parent": "pale_forest:block/dried_ghast",
+  "textures": {
+    "bottom": "pale_forest:block/dried_ghast_hydration_2_bottom",
+    "east": "pale_forest:block/dried_ghast_hydration_2_east",
+    "north": "pale_forest:block/dried_ghast_hydration_2_north",
+    "particle": "pale_forest:block/dried_ghast_hydration_2_north",
+    "south": "pale_forest:block/dried_ghast_hydration_2_south",
+    "tentacles": "pale_forest:block/dried_ghast_hydration_2_tentacles",
+    "top": "pale_forest:block/dried_ghast_hydration_2_top",
+    "west": "pale_forest:block/dried_ghast_hydration_2_west"
+  }
+}

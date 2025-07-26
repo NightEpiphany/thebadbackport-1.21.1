@@ -1,0 +1,29 @@
+{
+  "required": true,
+  "package": "com.moigferdsrte.pale_forest.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BeePollinateMixin",
+    "BlockEntityTypeMixin",
+    "ChickenLayEggMixin",
+    "PaleForestMixin",
+    "PoiTypesAccessor",
+    "SpawnEggTintMixin",
+    "TNTExplodeMixin",
+    "extra.access.EntityAccessor",
+    "extra.access.OverworldBiomesAccessor",
+    "extra.access.TreeDecoratorTypeAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "GoatEntityRendererMixin",
+    "LabelRendererMixin",
+    "LivingEntityFlipMixinV1",
+    "LivingEntityFlipMixinV2",
+    "PlayerNameTagMixin",
+    "RenderLayerMixin",
+    "extra.access.EntityRendererAccessor"
+  ]
+}

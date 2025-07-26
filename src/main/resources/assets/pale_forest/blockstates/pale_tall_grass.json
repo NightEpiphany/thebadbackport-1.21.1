@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "pale_forest:block/pale_tall_grass_bottom"
+    },
+    "half=upper": {
+      "model": "pale_forest:block/pale_tall_grass_top"
+    }
+  }
+}

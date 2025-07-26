@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,left=false,right=false": {
+      "model": "pale_forest:block/pale_oak_shelf",
+      "y": 90
+    },
+    "facing=north,left=false,right=false": {
+      "model": "pale_forest:block/pale_oak_shelf"
+    },
+    "facing=south,left=false,right=false": {
+      "model": "pale_forest:block/pale_oak_shelf",
+      "y": 180
+    },
+    "facing=west,left=false,right=false": {
+      "model": "pale_forest:block/pale_oak_shelf",
+      "y": 270
+    },
+    "facing=east,left=true,right=false": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_left",
+      "y": 90
+    },
+    "facing=north,left=true,right=false": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_left"
+    },
+    "facing=south,left=true,right=false": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_left",
+      "y": 180
+    },
+    "facing=west,left=true,right=false": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_left",
+      "y": 270
+    },
+    "facing=east,left=true,right=true": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_inter",
+      "y": 90
+    },
+    "facing=north,left=true,right=true": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_inter"
+    },
+    "facing=south,left=true,right=true": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_inter",
+      "y": 180
+    },
+    "facing=west,left=true,right=true": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_inter",
+      "y": 270
+    },
+    "facing=east,left=false,right=true": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_right",
+      "y": 90
+    },
+    "facing=north,left=false,right=true": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_right"
+    },
+    "facing=south,left=false,right=true": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_right",
+      "y": 180
+    },
+    "facing=west,left=false,right=true": {
+      "model": "pale_forest:block/pale_oak_shelf_powered_right",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,7 @@
+﻿{
+  "parent": "pale_forest:block/shelf_powered_left",
+  "textures": {
+		"0": "pale_forest:block/jungle_shelf",
+		"particle": "pale_forest:block/jungle_shelf"
+	}
+}

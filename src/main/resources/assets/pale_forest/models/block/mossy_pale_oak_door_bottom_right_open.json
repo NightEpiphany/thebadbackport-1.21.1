@@ -1,0 +1,7 @@
+﻿{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "pale_forest:block/mossy_pale_oak_door_bottom",
+    "top": "pale_forest:block/mossy_pale_oak_door_top"
+  }
+}

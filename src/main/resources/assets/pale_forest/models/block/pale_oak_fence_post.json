@@ -1,0 +1,6 @@
+﻿{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "pale_forest:block/pale_oak_planks"
+  }
+}

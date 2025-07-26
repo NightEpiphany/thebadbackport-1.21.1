@@ -1,0 +1,152 @@
+{
+  "music_disc.tears": {
+    "sounds": [
+      "pale_forest:tears"
+    ]
+  },
+  "music_disc.lava_chicken": {
+    "sounds": [
+      "pale_forest:lava_chicken"
+    ]
+  },
+  "happy_ghast_ambient": {
+    "subtitle": "sounds.pale_forest.happy_ghast_ambient",
+    "sounds": [
+      "pale_forest:happy_ghast_ambient1",
+      "pale_forest:happy_ghast_ambient2",
+      "pale_forest:happy_ghast_ambient3",
+      "pale_forest:happy_ghast_ambient4",
+      "pale_forest:happy_ghast_ambient5",
+      "pale_forest:happy_ghast_ambient6",
+      "pale_forest:happy_ghast_ambient7",
+      "pale_forest:happy_ghast_ambient8",
+      "pale_forest:happy_ghast_ambient9",
+      "pale_forest:happy_ghast_ambient10",
+      "pale_forest:happy_ghast_ambient11",
+      "pale_forest:happy_ghast_ambient12",
+      "pale_forest:happy_ghast_ambient13",
+      "pale_forest:happy_ghast_ambient14"
+    ]
+  },
+  "happy_ghast_hurt": {
+    "subtitle": "sounds.pale_forest.happy_ghast_hurt",
+    "sounds": [
+      "pale_forest:happy_ghast_hurt1",
+      "pale_forest:happy_ghast_hurt2",
+      "pale_forest:happy_ghast_hurt3",
+      "pale_forest:happy_ghast_hurt4",
+      "pale_forest:happy_ghast_hurt5",
+      "pale_forest:happy_ghast_hurt6"
+    ]
+  },
+  "happy_ghast_riding": {
+    "subtitle": "sounds.pale_forest.happy_ghast_riding",
+    "sounds": [
+      "pale_forest:happy_ghast_riding"
+    ]
+  },
+  "happy_ghast_goggles_up": {
+    "subtitle": "sounds.pale_forest.happy_ghast_goggles_up",
+    "sounds": [
+      "pale_forest:happy_ghast_goggles_up"
+    ]
+  },
+  "happy_ghast_goggles_down": {
+    "subtitle": "sounds.pale_forest.happy_ghast_goggles_down",
+    "sounds": [
+      "pale_forest:happy_ghast_goggles_down"
+    ]
+  },
+  "happy_ghast_death": {
+    "subtitle": "sounds.pale_forest.happy_ghast_death",
+    "sounds": [
+      "pale_forest:happy_ghast_death"
+    ]
+  },
+  "happy_ghast_harness_on": {
+    "subtitle": "sounds.pale_forest.happy_ghast_harness_on",
+    "sounds": [
+      "pale_forest:happy_ghast_harness_equip"
+    ]
+  },
+  "happy_ghast_harness_off": {
+    "subtitle": "sounds.pale_forest.happy_ghast_harness_off",
+    "sounds": [
+      "pale_forest:happy_ghast_harness_unequip"
+    ]
+  },
+  "creaking_hurt": {
+    "subtitle": "sounds.pale_forest.creaking_hurt",
+    "sounds": [
+      "pale_forest:creaking_hurt1",
+      "pale_forest:creaking_hurt2",
+      "pale_forest:creaking_hurt3",
+      "pale_forest:creaking_hurt4"
+    ]
+  },
+  "creaking_ambient": {
+    "subtitle": "sounds.pale_forest.creaking_ambient",
+    "sounds": [
+      "pale_forest:creaking_ambient1",
+      "pale_forest:creaking_ambient2",
+      "pale_forest:creaking_ambient3",
+      "pale_forest:creaking_ambient4",
+      "pale_forest:creaking_ambient5",
+      "pale_forest:creaking_ambient6"
+    ]
+  },
+  "creaking_death": {
+    "subtitle": "sounds.pale_forest.creaking_death",
+    "sounds": [
+      "pale_forest:creaking_death"
+    ]
+  },
+  "creaking_creak": {
+    "subtitle": "sounds.pale_forest.creaking_creak",
+    "sounds": [
+      "pale_forest:creaking_creak"
+    ]
+  },
+  "creaking_heart_break": {
+    "subtitle": "sounds.pale_forest.creaking_heart_break",
+    "sounds": [
+      "pale_forest:creaking_heart_break"
+    ]
+  },
+  "creaking_heart_fall": {
+    "subtitle": "sounds.pale_forest.creaking_heart_fall",
+    "sounds": [
+      "pale_forest:creaking_heart_fall"
+    ]
+  },
+  "creaking_heart_step": {
+    "subtitle": "sounds.pale_forest.creaking_heart_step",
+    "sounds": [
+      "pale_forest:creaking_heart_step1",
+      "pale_forest:creaking_heart_step2",
+      "pale_forest:creaking_heart_step3",
+      "pale_forest:creaking_heart_step4",
+      "pale_forest:creaking_heart_step5",
+      "pale_forest:creaking_heart_step6"
+    ]
+  },
+  "creaking_heart_hit": {
+    "subtitle": "sounds.pale_forest.creaking_heart_hit",
+    "sounds": [
+      "pale_forest:creaking_heart_hit1",
+      "pale_forest:creaking_heart_hit2",
+      "pale_forest:creaking_heart_hit3",
+      "pale_forest:creaking_heart_hit4",
+      "pale_forest:creaking_heart_hit5"
+    ]
+  },
+  "creaking_heart_place": {
+    "subtitle": "sounds.pale_forest.creaking_heart_place",
+    "sounds": [
+      "pale_forest:creaking_heart_place1",
+      "pale_forest:creaking_heart_place2",
+      "pale_forest:creaking_heart_place3",
+      "pale_forest:creaking_heart_place4"
+    ]
+  }
+}

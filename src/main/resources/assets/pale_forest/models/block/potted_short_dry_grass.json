@@ -1,0 +1,6 @@
+﻿{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "pale_forest:block/short_dry_grass"
+  }
+}

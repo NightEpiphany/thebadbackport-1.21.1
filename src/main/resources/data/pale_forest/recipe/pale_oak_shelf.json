@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "shelf",
+  "key": {
+    "#": {
+      "item": "pale_forest:stripped_pale_oak_log"
+    }
+  },
+  "pattern": [
+    "###",
+    "   ",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pale_forest:pale_oak_shelf"
+  }
+}

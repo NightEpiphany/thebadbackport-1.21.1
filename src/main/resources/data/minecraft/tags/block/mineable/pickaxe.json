@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "pale_forest:resin_clump",
+    "pale_forest:resin_block",
+    "pale_forest:resin_bricks",
+    "pale_forest:resin_bricks_stairs",
+    "pale_forest:resin_bricks_slab",
+    "pale_forest:resin_bricks_wall",
+    "pale_forest:chiseled_resin_bricks"
+  ]
+}

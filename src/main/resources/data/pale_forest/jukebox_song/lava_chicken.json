@@ -1,0 +1,8 @@
+{
+  "comparator_output": 10,
+  "description": {
+    "translate": "jukebox_song.pale_forest.lava_chicken"
+  },
+  "length_in_seconds": 135.0,
+  "sound_event": "pale_forest:music_disc.lava_chicken"
+}

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "axis=x,lit=false": {
+      "model": "pale_forest:block/creaking_heart_unlit_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y,lit=false": {
+      "model": "pale_forest:block/creaking_heart_unlit"
+    },
+    "axis=z,lit=false": {
+      "model": "pale_forest:block/creaking_heart_unlit_horizontal",
+      "x": 90
+    },
+    "axis=x,lit=true": {
+      "model": "pale_forest:block/creaking_heart_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y,lit=true": {
+      "model": "pale_forest:block/creaking_heart"
+    },
+    "axis=z,lit=true": {
+      "model": "pale_forest:block/creaking_heart_horizontal",
+      "x": 90
+    }
+  }
+}

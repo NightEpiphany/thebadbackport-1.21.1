@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pale_forest:item/variated/red_sheep_spawn_egg"
+  }
+}

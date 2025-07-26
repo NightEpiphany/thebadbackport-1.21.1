@@ -1,0 +1,8 @@
+{
+  "comparator_output": 10,
+  "description": {
+    "translate": "jukebox_song.pale_forest.tears"
+  },
+  "length_in_seconds": 176.0,
+  "sound_event": "pale_forest:music_disc.tears"
+}

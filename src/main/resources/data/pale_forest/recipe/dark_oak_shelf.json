@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "shelf",
+  "key": {
+    "#": {
+      "item": "minecraft:stripped_dark_oak_log"
+    }
+  },
+  "pattern": [
+    "###",
+    "   ",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pale_forest:dark_oak_shelf"
+  }
+}

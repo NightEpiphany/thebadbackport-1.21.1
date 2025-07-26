@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","category":"misc","pattern":["PPP","HHH","PPP"],"key":{"P":{"item":"pale_forest:pale_oak_planks"},"H":{"item":"minecraft:honeycomb"}},"result":{"count":1,"id":"pale_forest:pale_oak_beehive"}}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "pale_forest:resin_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "pale_forest:chiseled_resin_bricks"
+  }
+}

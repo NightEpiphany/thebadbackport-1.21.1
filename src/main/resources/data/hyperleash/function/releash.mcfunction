@@ -1,0 +1,1 @@
+$execute as @e[nbt={leash:{UUID:$(UUID)}},tag=hyperleash_leashed] run data modify entity @s leash.UUID set from entity @n[nbt={leash:{UUID:$(UUID)}},tag=!hyperleash_leashed] UUID

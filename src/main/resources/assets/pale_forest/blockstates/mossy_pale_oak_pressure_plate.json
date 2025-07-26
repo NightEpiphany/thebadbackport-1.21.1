@@ -1,0 +1,10 @@
+﻿{
+  "variants": {
+    "powered=false": {
+      "model": "pale_forest:block/mossy_pale_oak_pressure_plate"
+    },
+    "powered=true": {
+      "model": "pale_forest:block/mossy_pale_oak_pressure_plate_down"
+    }
+  }
+}

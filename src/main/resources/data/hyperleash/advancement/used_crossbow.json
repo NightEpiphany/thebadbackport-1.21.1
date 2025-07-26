@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:shot_crossbow",
+			"conditions": {
+				"item": {
+					"items": "minecraft:crossbow"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "hyperleash:used_crossbow"
+	}
+}

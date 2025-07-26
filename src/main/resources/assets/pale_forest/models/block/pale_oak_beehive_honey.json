@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "pale_forest:block/pale_oak_beehive_end",
+    "front": "pale_forest:block/pale_oak_beehive_front_honey",
+    "particle": "pale_forest:block/pale_oak_beehive_side",
+    "side": "pale_forest:block/pale_oak_beehive_side",
+    "top": "pale_forest:block/pale_oak_beehive_end"
+  }
+}

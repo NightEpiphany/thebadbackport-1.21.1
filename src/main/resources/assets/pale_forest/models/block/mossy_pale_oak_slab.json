@@ -1,0 +1,8 @@
+﻿{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "pale_forest:block/mossy_pale_oak_planks",
+    "side": "pale_forest:block/mossy_pale_oak_planks",
+    "top": "pale_forest:block/mossy_pale_oak_planks"
+  }
+}

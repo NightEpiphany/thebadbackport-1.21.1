@@ -1,0 +1,22 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_door",
+  "key": {
+    "#": {
+      "item": "pale_forest:pale_oak_log"
+    },
+    "O": {
+      "item": "pale_forest:resin_block"
+    }
+  },
+  "pattern": [
+    "#",
+    "O",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pale_forest:creaking_heart"
+  }
+}
