@@ -643,6 +643,102 @@ public class ModBlocks {
                     .pistonBehavior(PistonBehavior.DESTROY))
     );
 
+    public static final Block COPPER_GOLEM_STATUE = register("copper_golem_statue", new CopperGolemStatueBlock(
+            Oxidizable.OxidationLevel.UNAFFECTED,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.COPPER)
+                    .strength(3.0F, 3.3F)
+                    .nonOpaque()
+                    .notSolid()
+                    .noCollision()
+                    .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
+                    .pistonBehavior(PistonBehavior.BLOCK))
+    );
+
+    public static final Block WEATHERED_COPPER_GOLEM_STATUE = register("weathered_copper_golem_statue", new CopperGolemStatueBlock(
+            Oxidizable.OxidationLevel.WEATHERED,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.COPPER)
+                    .strength(3.0F, 3.3F)
+                    .nonOpaque()
+                    .notSolid()
+                    .noCollision()
+                    .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
+                    .pistonBehavior(PistonBehavior.BLOCK))
+    );
+
+    public static final Block EXPOSED_COPPER_GOLEM_STATUE = register("exposed_copper_golem_statue", new CopperGolemStatueBlock(
+            Oxidizable.OxidationLevel.EXPOSED,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.COPPER)
+                    .strength(3.0F, 3.3F)
+                    .nonOpaque()
+                    .notSolid()
+                    .noCollision()
+                    .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
+                    .pistonBehavior(PistonBehavior.BLOCK))
+    );
+
+    public static final Block OXIDIZED_COPPER_GOLEM_STATUE = register("oxidized_copper_golem_statue", new CopperGolemStatueBlock(
+            Oxidizable.OxidationLevel.OXIDIZED,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.COPPER)
+                    .strength(3.0F, 3.3F)
+                    .nonOpaque()
+                    .notSolid()
+                    .noCollision()
+                    .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
+                    .pistonBehavior(PistonBehavior.BLOCK))
+    );
+
+    public static final Block WAXED_COPPER_GOLEM_STATUE = register("waxed_copper_golem_statue", new CopperGolemStatueBlock(
+            Oxidizable.OxidationLevel.UNAFFECTED,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.COPPER)
+                    .strength(3.0F, 3.3F)
+                    .nonOpaque()
+                    .notSolid()
+                    .noCollision()
+                    .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
+                    .pistonBehavior(PistonBehavior.BLOCK))
+    );
+
+    public static final Block WAXED_WEATHERED_COPPER_GOLEM_STATUE = register("waxed_weathered_copper_golem_statue", new CopperGolemStatueBlock(
+            Oxidizable.OxidationLevel.WEATHERED,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.COPPER)
+                    .strength(3.0F, 3.3F)
+                    .nonOpaque()
+                    .notSolid()
+                    .noCollision()
+                    .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
+                    .pistonBehavior(PistonBehavior.BLOCK))
+    );
+
+    public static final Block WAXED_EXPOSED_COPPER_GOLEM_STATUE = register("waxed_exposed_copper_golem_statue", new CopperGolemStatueBlock(
+            Oxidizable.OxidationLevel.EXPOSED,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.COPPER)
+                    .strength(3.0F, 3.3F)
+                    .nonOpaque()
+                    .notSolid()
+                    .noCollision()
+                    .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
+                    .pistonBehavior(PistonBehavior.BLOCK))
+    );
+
+    public static final Block WAXED_OXIDIZED_COPPER_GOLEM_STATUE = register("waxed_oxidized_copper_golem_statue", new CopperGolemStatueBlock(
+            Oxidizable.OxidationLevel.OXIDIZED,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.COPPER)
+                    .strength(3.0F, 3.3F)
+                    .nonOpaque()
+                    .notSolid()
+                    .noCollision()
+                    .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
+                    .pistonBehavior(PistonBehavior.BLOCK))
+    );
+
     //registry
 
     public static ToIntFunction<BlockState> createLightLevelFromLitBlockState(int litLevel) {

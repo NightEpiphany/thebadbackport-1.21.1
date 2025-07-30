@@ -46,6 +46,8 @@ public class ThePaleForestClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(HappyGhastModel.LAYER, HappyGhastModel::getTexturedModelData);
 
+        EntityModelLayerRegistry.registerModelLayer(CopperGolemStatueRenderer.LAYER, CopperGolemStatueRenderer::getTexturedModelData);
+
         EntityRendererRegistry.register(ModEntities.HAPPY_GHAST, HappyGhastRenderer::new);
 
         ParticleFactoryRegistry.getInstance().register(ThePaleForest.FIREFLY_PARTICLE, FireflyParticleFactory.FireflyFactory::new);
@@ -55,6 +57,8 @@ public class ThePaleForestClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.BROWN_EGG, FlyingItemEntityRenderer::new);
 
         BlockEntityRendererFactories.register(ModBlockEntities.SHELF, ShelfBlockEntityRenderer::new);
+
+        BlockEntityRendererFactories.register(ModBlockEntities.COPPER_GOLEM_STATUE, CopperGolemStatueRenderer::new);
 
         ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> {
             assert view != null;

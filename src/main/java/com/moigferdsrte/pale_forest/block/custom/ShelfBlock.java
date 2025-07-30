@@ -170,7 +170,7 @@ public class ShelfBlock extends BlockWithEntity implements Waterloggable {
                 } else {
                     BlockState newState = state.with(POWERED, true);
                     world.setBlockState(pos, newState, Block.NOTIFY_LISTENERS);
-                    updateConnections(world, pos, newState); // 红石激活时更新连接
+                    updateConnections(world, pos, newState);
                 }
             } else if (bl) {
                 updateConnections(world, pos, state);

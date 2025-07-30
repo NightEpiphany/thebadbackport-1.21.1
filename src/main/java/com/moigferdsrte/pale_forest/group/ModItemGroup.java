@@ -126,6 +126,15 @@ public class ModItemGroup {
                         entries.add(ModBlocks.MANGROVE_SHELF);
                         entries.add(ModBlocks.CRIMSON_SHELF);
                         entries.add(ModBlocks.WARPED_SHELF);
+                        entries.add(ModItems.COPPER_HORSE_ARMOR);
+                        entries.add(ModBlocks.COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.EXPOSED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.WEATHERED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.OXIDIZED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.WAXED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.WAXED_EXPOSED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.WAXED_WEATHERED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.WAXED_OXIDIZED_COPPER_GOLEM_STATUE);
 
                     })).build());
 

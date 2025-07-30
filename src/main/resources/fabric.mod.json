@@ -40,6 +40,9 @@
 		"items_displayed": "*"
 	},
 	"suggests": {
-		"nemos-mossy-blocks": "*"
+		"nemos-mossy-blocks": "*",
+		"friendsandfoes": "*",
+		"exlinecopperequipment" : "*",
+		"lolmcv": "*"
 	}
 }

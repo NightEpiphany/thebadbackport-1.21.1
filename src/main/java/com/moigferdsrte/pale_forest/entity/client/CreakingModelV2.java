@@ -126,8 +126,6 @@ public class CreakingModelV2<T extends CreakingEntity> extends SinglePartEntityM
         this.head.yaw = headYaw * ((float) Math.PI / 180F);
 
         this.animateMovement(CreakingAnimationV2.CREAKING_WALK, limbAngle, limbDistance, 1.0F, 1.0F);
-
-
         this.updateAnimation(entity.attackAnimationState, CreakingAnimationV2.CREAKING_ATTACK, animationProgress);
         this.updateAnimation(entity.invulnerabilityAnimationState, CreakingAnimationV2.CREAKING_INVULNERABLE, animationProgress);
         this.updateAnimation(entity.deathAnimationState, CreakingAnimationV2.CREAKING_DEATH, animationProgress);

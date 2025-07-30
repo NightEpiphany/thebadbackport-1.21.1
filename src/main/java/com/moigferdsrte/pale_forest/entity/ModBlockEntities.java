@@ -2,6 +2,7 @@ package com.moigferdsrte.pale_forest.entity;
 
 import com.moigferdsrte.pale_forest.ThePaleForest;
 import com.moigferdsrte.pale_forest.block.ModBlocks;
+import com.moigferdsrte.pale_forest.entity.block.CopperGolemStatueBlockEntity;
 import com.moigferdsrte.pale_forest.entity.block.ShelfBlockEntity;
 import com.mojang.datafixers.types.Type;
 import net.minecraft.block.entity.BlockEntity;
@@ -29,6 +30,19 @@ public class ModBlockEntities {
                     ModBlocks.CHERRY_SHELF,
                     ModBlocks.SPRUCE_SHELF
             ));
+
+    public static final BlockEntityType<CopperGolemStatueBlockEntity> COPPER_GOLEM_STATUE = create("copper_golem_statue",
+            BlockEntityType.Builder.create(CopperGolemStatueBlockEntity::new,
+                    ModBlocks.COPPER_GOLEM_STATUE,
+                    ModBlocks.EXPOSED_COPPER_GOLEM_STATUE,
+                    ModBlocks.WEATHERED_COPPER_GOLEM_STATUE,
+                    ModBlocks.OXIDIZED_COPPER_GOLEM_STATUE,
+                    ModBlocks.WAXED_COPPER_GOLEM_STATUE,
+                    ModBlocks.WAXED_EXPOSED_COPPER_GOLEM_STATUE,
+                    ModBlocks.WAXED_OXIDIZED_COPPER_GOLEM_STATUE,
+                    ModBlocks.WAXED_WEATHERED_COPPER_GOLEM_STATUE
+                    )
+            );
 
     private static <T extends BlockEntity> BlockEntityType<T> create(String id, BlockEntityType.Builder<T> builder) {
         Type<?> type = Util.getChoiceType(TypeReferences.BLOCK_ENTITY, id);

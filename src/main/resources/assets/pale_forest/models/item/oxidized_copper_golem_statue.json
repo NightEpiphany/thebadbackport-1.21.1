@@ -1,0 +1,6 @@
+{
+  "parent": "pale_forest:item/template_copper_golem_statue",
+  "textures": {
+    "0": "pale_forest:item/oxidized_copper_golem"
+  }
+}

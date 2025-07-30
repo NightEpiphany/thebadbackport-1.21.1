@@ -59,6 +59,9 @@ public class ModItems {
             "pale_hoe", new HoeItem(ToolMaterials.WOOD, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.WOOD, 0.0F, -3.0F)))
     );
 
+    public static final Item COPPER_HORSE_ARMOR = registerItems("copper_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.COPPER, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
+
     public static final Item BLUE_HARNESS = registerItems("blue_harness", new HarnessItem(DyeColor.BLUE, false, new Item.Settings().maxCount(1)));
 
     public static final Item GREEN_HARNESS = registerItems("green_harness", new HarnessItem(DyeColor.GREEN, false, new Item.Settings().maxCount(1)));
