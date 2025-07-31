@@ -1,13 +1,18 @@
 package com.moigferdsrte.pale_forest.block.custom;
 
 import com.moigferdsrte.pale_forest.entity.block.CopperGolemStatueBlockEntity;
+import com.moigferdsrte.pale_forest.entity.block.RunCopperGolemStatueBlockEntity;
+import com.moigferdsrte.pale_forest.entity.block.SitCopperGolemStatueBlockEntity;
+import com.moigferdsrte.pale_forest.entity.block.StarCopperGolemStatueBlockEntity;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
@@ -15,13 +20,16 @@ import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
@@ -48,8 +56,30 @@ public class CopperGolemStatueBlock extends BlockWithEntity implements Oxidizabl
     }
 
     @Override
+    protected boolean hasRandomTicks(BlockState state) {
+        return Oxidizable.getIncreasedOxidationBlock(state.getBlock()).isPresent();
+    }
+
+    @Override
     protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 16.0, 12.0);
+    }
+
+//    @Override
+//    protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+//        if (player.getMainHandStack() == ItemStack.EMPTY && world instanceof ServerWorld serverWorld) {
+//            serverWorld.setBlockState(pos, state.cycle(POSE), Block.NOTIFY_LISTENERS);
+//            if (!world.isClient) {
+//                world.updateListeners(pos, state, state, Block.NOTIFY_LISTENERS);
+//            }
+//            return ActionResult.SUCCESS;
+//        }
+//        return super.onUse(state, world, pos, player, hit);
+//    }
+
+    @Override
+    protected void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
+        super.onStateReplaced(state, world, pos, newState, moved);
     }
 
     @Override
@@ -76,8 +106,11 @@ public class CopperGolemStatueBlock extends BlockWithEntity implements Oxidizabl
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         BlockState blockState = super.getPlacementState(ctx);
+        int i = ctx.getWorld().getRandom().nextInt(4);
+
         return blockState != null
-                ? withWaterloggedState(ctx.getWorld(), ctx.getBlockPos(), blockState.with(FACING, ctx.getHorizontalPlayerFacing().getOpposite()))
+                ? withWaterloggedState(ctx.getWorld(), ctx.getBlockPos(),
+                blockState.with(FACING, ctx.getHorizontalPlayerFacing().getOpposite()).with(POSE, i == 0 ? CopperGolemStatuePose.RUNNING : i == 1 ? CopperGolemStatuePose.SITTING : i == 2 ? CopperGolemStatuePose.STANDING : CopperGolemStatuePose.STAR))
                 : null;
     }
 
@@ -112,7 +145,18 @@ public class CopperGolemStatueBlock extends BlockWithEntity implements Oxidizabl
 
     @Override
     public @Nullable BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new CopperGolemStatueBlockEntity(pos, state);
+        switch (state.get(POSE)) {
+            case SITTING -> {
+                return new SitCopperGolemStatueBlockEntity(pos, state);
+            }case RUNNING -> {
+                return new RunCopperGolemStatueBlockEntity(pos, state);
+            }case STAR -> {
+                return new StarCopperGolemStatueBlockEntity(pos, state);
+            }
+            default -> {
+                return new CopperGolemStatueBlockEntity(pos, state);
+            }
+        }
     }
 
     @Override

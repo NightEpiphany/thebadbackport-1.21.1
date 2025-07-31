@@ -650,7 +650,6 @@ public class ModBlocks {
                     .strength(3.0F, 3.3F)
                     .nonOpaque()
                     .notSolid()
-                    .noCollision()
                     .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
                     .pistonBehavior(PistonBehavior.BLOCK))
     );
@@ -662,7 +661,6 @@ public class ModBlocks {
                     .strength(3.0F, 3.3F)
                     .nonOpaque()
                     .notSolid()
-                    .noCollision()
                     .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
                     .pistonBehavior(PistonBehavior.BLOCK))
     );
@@ -674,7 +672,6 @@ public class ModBlocks {
                     .strength(3.0F, 3.3F)
                     .nonOpaque()
                     .notSolid()
-                    .noCollision()
                     .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
                     .pistonBehavior(PistonBehavior.BLOCK))
     );
@@ -686,7 +683,6 @@ public class ModBlocks {
                     .strength(3.0F, 3.3F)
                     .nonOpaque()
                     .notSolid()
-                    .noCollision()
                     .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
                     .pistonBehavior(PistonBehavior.BLOCK))
     );
@@ -698,7 +694,6 @@ public class ModBlocks {
                     .strength(3.0F, 3.3F)
                     .nonOpaque()
                     .notSolid()
-                    .noCollision()
                     .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
                     .pistonBehavior(PistonBehavior.BLOCK))
     );
@@ -710,7 +705,6 @@ public class ModBlocks {
                     .strength(3.0F, 3.3F)
                     .nonOpaque()
                     .notSolid()
-                    .noCollision()
                     .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
                     .pistonBehavior(PistonBehavior.BLOCK))
     );
@@ -722,7 +716,6 @@ public class ModBlocks {
                     .strength(3.0F, 3.3F)
                     .nonOpaque()
                     .notSolid()
-                    .noCollision()
                     .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
                     .pistonBehavior(PistonBehavior.BLOCK))
     );
@@ -734,7 +727,6 @@ public class ModBlocks {
                     .strength(3.0F, 3.3F)
                     .nonOpaque()
                     .notSolid()
-                    .noCollision()
                     .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
                     .pistonBehavior(PistonBehavior.BLOCK))
     );

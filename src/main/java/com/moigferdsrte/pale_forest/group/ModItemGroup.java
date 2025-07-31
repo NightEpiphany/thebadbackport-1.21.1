@@ -6,6 +6,7 @@ import com.moigferdsrte.pale_forest.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -17,9 +18,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static final net.minecraft.item.ItemGroup TAB = Registry.register(Registries.ITEM_GROUP, Identifier.of(ThePaleForest.MOD_ID,"plushie"),
-            net.minecraft.item.ItemGroup.create(null,-1).displayName(Text.translatable("itemGroup.pale_forest.item_tab"))
-                    .icon(()->new ItemStack(ModBlocks.PALE_OAK_LOG))
+    public static final ItemGroup TAB1 = Registry.register(Registries.ITEM_GROUP, Identifier.of(ThePaleForest.MOD_ID,"original"),
+            ItemGroup.create(null,-1).displayName(Text.translatable("itemGroup.pale_forest.item_tab"))
+                    .icon(()->new ItemStack(ModBlocks.RESIN_CLUMP))
                     .entries(((displayContext, entries) -> {
                         entries.add(ModItems.RESIN_CLUMP);
                         entries.add(ModItems.RESIN_BRICK);
@@ -114,6 +115,21 @@ public class ModItemGroup {
                         entries.add(ModItems.YELLOW_HARNESS);
                         entries.add(ModItems.MUSIC_DISC_TEARS);
                         entries.add(ModItems.MUSIC_DISC_LAVA_CHICKEN);
+                    })).build());
+
+    public static final ItemGroup TAB2 = Registry.register(Registries.ITEM_GROUP, Identifier.of(ThePaleForest.MOD_ID,"another"),
+            ItemGroup.create(null,-1).displayName(Text.translatable("itemGroup.pale_forest.item_tab"))
+                    .icon(()->new ItemStack(ModBlocks.COPPER_GOLEM_STATUE))
+                    .entries(((displayContext, entries) -> {
+                        entries.add(ModItems.COPPER_HORSE_ARMOR);
+                        entries.add(ModBlocks.COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.EXPOSED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.WEATHERED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.OXIDIZED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.WAXED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.WAXED_EXPOSED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.WAXED_WEATHERED_COPPER_GOLEM_STATUE);
+                        entries.add(ModBlocks.WAXED_OXIDIZED_COPPER_GOLEM_STATUE);
                         entries.add(ModBlocks.OAK_SHELF);
                         entries.add(ModBlocks.ACACIA_SHELF);
                         entries.add(ModBlocks.DARK_OAK_SHELF);
@@ -126,15 +142,6 @@ public class ModItemGroup {
                         entries.add(ModBlocks.MANGROVE_SHELF);
                         entries.add(ModBlocks.CRIMSON_SHELF);
                         entries.add(ModBlocks.WARPED_SHELF);
-                        entries.add(ModItems.COPPER_HORSE_ARMOR);
-                        entries.add(ModBlocks.COPPER_GOLEM_STATUE);
-                        entries.add(ModBlocks.EXPOSED_COPPER_GOLEM_STATUE);
-                        entries.add(ModBlocks.WEATHERED_COPPER_GOLEM_STATUE);
-                        entries.add(ModBlocks.OXIDIZED_COPPER_GOLEM_STATUE);
-                        entries.add(ModBlocks.WAXED_COPPER_GOLEM_STATUE);
-                        entries.add(ModBlocks.WAXED_EXPOSED_COPPER_GOLEM_STATUE);
-                        entries.add(ModBlocks.WAXED_WEATHERED_COPPER_GOLEM_STATUE);
-                        entries.add(ModBlocks.WAXED_OXIDIZED_COPPER_GOLEM_STATUE);
 
                     })).build());
 

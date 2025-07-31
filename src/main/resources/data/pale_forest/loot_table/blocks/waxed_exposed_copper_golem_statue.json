@@ -1,0 +1,21 @@
+﻿{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pale_forest:waxed_exposed_copper_golem_statue"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "pale_forest:blocks/waxed_exposed_copper_golem_statue"
+}

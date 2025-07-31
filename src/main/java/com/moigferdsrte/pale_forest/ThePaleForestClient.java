@@ -48,6 +48,12 @@ public class ThePaleForestClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(CopperGolemStatueRenderer.LAYER, CopperGolemStatueRenderer::getTexturedModelData);
 
+        EntityModelLayerRegistry.registerModelLayer(SitCopperGolemStatueRenderer.LAYER, SitCopperGolemStatueRenderer::getTexturedModelData);
+
+        EntityModelLayerRegistry.registerModelLayer(RunCopperGolemStatueRenderer.LAYER, RunCopperGolemStatueRenderer::getTexturedModelData);
+
+        EntityModelLayerRegistry.registerModelLayer(StarCopperGolemStatueRenderer.LAYER, StarCopperGolemStatueRenderer::getTexturedModelData);
+
         EntityRendererRegistry.register(ModEntities.HAPPY_GHAST, HappyGhastRenderer::new);
 
         ParticleFactoryRegistry.getInstance().register(ThePaleForest.FIREFLY_PARTICLE, FireflyParticleFactory.FireflyFactory::new);
@@ -59,6 +65,12 @@ public class ThePaleForestClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.SHELF, ShelfBlockEntityRenderer::new);
 
         BlockEntityRendererFactories.register(ModBlockEntities.COPPER_GOLEM_STATUE, CopperGolemStatueRenderer::new);
+
+        BlockEntityRendererFactories.register(ModBlockEntities.SIT_COPPER_GOLEM_STATUE, SitCopperGolemStatueRenderer::new);
+
+        BlockEntityRendererFactories.register(ModBlockEntities.RUN_COPPER_GOLEM_STATUE, RunCopperGolemStatueRenderer::new);
+
+        BlockEntityRendererFactories.register(ModBlockEntities.STAR_COPPER_GOLEM_STATUE, StarCopperGolemStatueRenderer::new);
 
         ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> {
             assert view != null;

@@ -4,6 +4,7 @@ import com.moigferdsrte.pale_forest.ThePaleForest;
 import com.moigferdsrte.pale_forest.block.ModBlocks;
 import com.moigferdsrte.pale_forest.entity.ModBoats;
 import com.moigferdsrte.pale_forest.entity.ModEntities;
+import com.moigferdsrte.pale_forest.group.ModItemGroup;
 import com.moigferdsrte.pale_forest.item.custom.BlueEggItem;
 import com.moigferdsrte.pale_forest.item.custom.BrownEggItem;
 import com.moigferdsrte.pale_forest.item.custom.HarnessItem;
