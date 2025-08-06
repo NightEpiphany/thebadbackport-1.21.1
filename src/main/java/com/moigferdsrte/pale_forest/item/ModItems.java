@@ -15,6 +15,7 @@ import com.moigferdsrte.pale_forest.sound.ModJukeboxSongs;
 import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -26,6 +27,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.math.Direction;
 
 public class ModItems {
 
@@ -133,12 +135,14 @@ public class ModItems {
 
     public static Item TOAST_RABBIT_SPAWN_EGG = registerItems("toast_rabbit_spawn_egg", new RabbitSpawnEgg(RabbitEntity.RabbitType.BROWN, new Item.Settings(), true));
 
+
+    public static final Item COPPER_TORCH = registerItems("copper_torch", new VerticallyAttachableBlockItem(ModBlocks.COPPER_TORCH, ModBlocks.WALL_COPPER_TORCH, new Item.Settings(), Direction.DOWN));
+
     static {
         for (var i : DyeColor.values()) {
            final Item HARNESS = registerItems(i.getName() + "_festive_harness", new HarnessItem(i, true, new Item.Settings().maxCount(1)));
             ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(e -> e.add(HARNESS));
         }
-
 
         for (var i : DyeColor.values()) {
             final Item SHULKER_EGG = registerItems(i.getName() + "_shulker_spawn_egg", new ShulkerDyeableSpawnEgg(i, new Item.Settings()));

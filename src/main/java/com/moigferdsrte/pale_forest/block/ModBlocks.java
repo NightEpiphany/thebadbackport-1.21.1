@@ -14,6 +14,7 @@ import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -729,6 +730,214 @@ public class ModBlocks {
                     .notSolid()
                     .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
                     .pistonBehavior(PistonBehavior.BLOCK))
+    );
+
+    public static final Block WAXED_COPPER_CHAIN = register(
+            "waxed_copper_chain", new ChainBlock(AbstractBlock.Settings.create().solid().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.CHAIN).nonOpaque())
+    );
+
+    public static final Block WAXED_WEATHERED_COPPER_CHAIN = register(
+            "waxed_weathered_copper_chain", new ChainBlock(AbstractBlock.Settings.create().solid().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.CHAIN).nonOpaque())
+    );
+
+    public static final Block WAXED_OXIDIZED_COPPER_CHAIN = register(
+            "waxed_oxidized_copper_chain", new ChainBlock(AbstractBlock.Settings.create().solid().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.CHAIN).nonOpaque())
+    );
+
+    public static final Block WAXED_EXPOSED_COPPER_CHAIN = register(
+            "waxed_exposed_copper_chain", new ChainBlock(AbstractBlock.Settings.create().solid().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.CHAIN).nonOpaque())
+    );
+
+    public static final Block COPPER_CHAIN = register(
+            "copper_chain", new OxidizableChainBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.create().solid().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.CHAIN).nonOpaque())
+    );
+
+    public static final Block WEATHERED_COPPER_CHAIN = register(
+            "weathered_copper_chain", new OxidizableChainBlock(Oxidizable.OxidationLevel.WEATHERED, AbstractBlock.Settings.create().solid().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.CHAIN).nonOpaque())
+    );
+
+    public static final Block OXIDIZED_COPPER_CHAIN = register(
+            "oxidized_copper_chain", new OxidizableChainBlock(Oxidizable.OxidationLevel.OXIDIZED, AbstractBlock.Settings.create().solid().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.CHAIN).nonOpaque())
+    );
+
+    public static final Block EXPOSED_COPPER_CHAIN = register(
+            "exposed_copper_chain", new OxidizableChainBlock(Oxidizable.OxidationLevel.EXPOSED, AbstractBlock.Settings.create().solid().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.CHAIN).nonOpaque())
+    );
+
+    public static final Block COPPER_TORCH = Registry.register(
+            Registries.BLOCK,
+            Identifier.of(ThePaleForest.MOD_ID, "copper_torch"),
+            new TorchBlock(
+                    ThePaleForest.GREEN_FLAME,
+                    AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 11).sounds(BlockSoundGroup.COPPER).pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block WALL_COPPER_TORCH = Registry.register(
+            Registries.BLOCK,
+            Identifier.of(ThePaleForest.MOD_ID, "copper_wall_torch"),
+            new WallTorchBlock(
+                    ThePaleForest.GREEN_FLAME,
+                    AbstractBlock.Settings.create()
+                            .noCollision()
+                            .breakInstantly()
+                            .luminance(state -> 11)
+                            .sounds(BlockSoundGroup.COPPER)
+                            .dropsLike(COPPER_TORCH)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block WAXED_COPPER_LANTERN = register(
+            "waxed_copper_lantern",
+            new LanternBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
+                            .solid()
+                            .requiresTool()
+                            .strength(3.5F)
+                            .sounds(BlockSoundGroup.LANTERN)
+                            .luminance(state -> 12)
+                            .nonOpaque()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block WAXED_EXPOSED_COPPER_LANTERN = register(
+            "waxed_exposed_copper_lantern",
+            new LanternBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(Blocks.EXPOSED_COPPER.getDefaultMapColor())
+                            .solid()
+                            .requiresTool()
+                            .strength(3.5F)
+                            .sounds(BlockSoundGroup.LANTERN)
+                            .luminance(state -> 12)
+                            .nonOpaque()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block WAXED_WEATHERED_COPPER_LANTERN = register(
+            "waxed_weathered_copper_lantern",
+            new LanternBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(Blocks.WEATHERED_COPPER.getDefaultMapColor())
+                            .solid()
+                            .requiresTool()
+                            .strength(3.5F)
+                            .sounds(BlockSoundGroup.LANTERN)
+                            .luminance(state -> 12)
+                            .nonOpaque()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block WAXED_OXIDIZED_COPPER_LANTERN = register(
+            "waxed_oxidized_copper_lantern",
+            new LanternBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(Blocks.OXIDIZED_COPPER.getDefaultMapColor())
+                            .solid()
+                            .requiresTool()
+                            .strength(3.5F)
+                            .sounds(BlockSoundGroup.LANTERN)
+                            .luminance(state -> 12)
+                            .nonOpaque()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block COPPER_LANTERN = register(
+            "copper_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.UNAFFECTED,
+                    AbstractBlock.Settings.create()
+                            .mapColor(Blocks.COPPER_BLOCK.getDefaultMapColor())
+                            .solid()
+                            .requiresTool()
+                            .strength(3.5F)
+                            .sounds(BlockSoundGroup.LANTERN)
+                            .luminance(state -> 12)
+                            .nonOpaque()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block EXPOSED_COPPER_LANTERN = register(
+            "exposed_copper_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.EXPOSED,
+                    AbstractBlock.Settings.create()
+                            .mapColor(Blocks.EXPOSED_COPPER.getDefaultMapColor())
+                            .solid()
+                            .requiresTool()
+                            .strength(3.5F)
+                            .sounds(BlockSoundGroup.LANTERN)
+                            .luminance(state -> 12)
+                            .nonOpaque()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block WEATHERED_COPPER_LANTERN = register(
+            "weathered_copper_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.WEATHERED,
+                    AbstractBlock.Settings.create()
+                            .mapColor(Blocks.WEATHERED_COPPER.getDefaultMapColor())
+                            .solid()
+                            .requiresTool()
+                            .strength(3.5F)
+                            .sounds(BlockSoundGroup.LANTERN)
+                            .luminance(state -> 12)
+                            .nonOpaque()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block OXIDIZED_COPPER_LANTERN = register(
+            "oxidized_copper_lantern",
+            new OxidizableLanternBlock(Oxidizable.OxidationLevel.OXIDIZED,
+                    AbstractBlock.Settings.create()
+                            .mapColor(Blocks.OXIDIZED_COPPER.getDefaultMapColor())
+                            .solid()
+                            .requiresTool()
+                            .strength(3.5F)
+                            .sounds(BlockSoundGroup.LANTERN)
+                            .luminance(state -> 12)
+                            .nonOpaque()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block COPPER_BARS = register(
+            "copper_bars", new OxidizableBarBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.create().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.COPPER).nonOpaque())
+    );
+
+    public static final Block WEATHERED_COPPER_BARS = register(
+            "weathered_copper_bars", new OxidizableBarBlock(Oxidizable.OxidationLevel.WEATHERED, AbstractBlock.Settings.create().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.COPPER).nonOpaque())
+    );
+
+    public static final Block OXIDIZED_COPPER_BARS = register(
+            "oxidized_copper_bars", new OxidizableBarBlock(Oxidizable.OxidationLevel.OXIDIZED, AbstractBlock.Settings.create().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.COPPER).nonOpaque())
+    );
+
+    public static final Block EXPOSED_COPPER_BARS = register(
+            "exposed_copper_bars", new OxidizableBarBlock(Oxidizable.OxidationLevel.EXPOSED, AbstractBlock.Settings.create().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.COPPER).nonOpaque())
+    );
+
+    public static final Block WAXED_COPPER_BARS = register(
+            "waxed_copper_bars", new PaneBlock(AbstractBlock.Settings.create().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.COPPER).nonOpaque())
+    );
+
+    public static final Block WAXED_WEATHERED_COPPER_BARS = register(
+            "waxed_weathered_copper_bars", new OxidizableBarBlock(Oxidizable.OxidationLevel.WEATHERED, AbstractBlock.Settings.create().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.COPPER).nonOpaque())
+    );
+
+    public static final Block WAXED_OXIDIZED_COPPER_BARS = register(
+            "waxed_oxidized_copper_bars", new OxidizableBarBlock(Oxidizable.OxidationLevel.OXIDIZED, AbstractBlock.Settings.create().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.COPPER).nonOpaque())
+    );
+
+    public static final Block WAXED_EXPOSED_COPPER_BARS = register(
+            "waxed_exposed_copper_bars", new OxidizableBarBlock(Oxidizable.OxidationLevel.EXPOSED, AbstractBlock.Settings.create().requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.COPPER).nonOpaque())
     );
 
     //registry

@@ -29,6 +29,7 @@ import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.particle.ParticleType;
+import net.minecraft.particle.SimpleParticleType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
@@ -55,12 +56,15 @@ public class ThePaleForest implements ModInitializer {
 	public static final GameRules.Key<GameRules.BooleanRule> TNT_EXPLOSION =
 			GameRuleRegistry.register("tntExplodes", GameRules.Category.UPDATES, GameRuleFactory.createBooleanRule(true));
 
+    public static final SimpleParticleType GREEN_FLAME = FabricParticleTypes.simple();
+
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static final  RegistryEntry.Reference<StatusEffect> PALE_EROSION = Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(MOD_ID, "pale_erosion"), new PaleErosionStatusEffect());
 
 	@Override
 	public void onInitialize() {
+        Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "copper_fire_flame"), GREEN_FLAME);
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroup.registerItemGroup();

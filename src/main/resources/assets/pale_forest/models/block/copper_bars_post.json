@@ -1,0 +1,7 @@
+﻿{
+  "parent": "pale_forest:block/template_bars_post",
+  "textures": {
+    "bars": "pale_forest:block/copper_bars",
+    "edge": "pale_forest:block/copper_bars"
+  }
+}

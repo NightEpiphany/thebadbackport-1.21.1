@@ -1,0 +1,6 @@
+﻿{
+  "parent": "pale_forest:block/template_lantern",
+  "textures": {
+    "lantern": "pale_forest:block/oxidized_copper_lantern"
+  }
+}

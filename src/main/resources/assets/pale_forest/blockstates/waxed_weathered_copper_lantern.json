@@ -1,0 +1,10 @@
+﻿{
+  "variants": {
+    "hanging=false": {
+      "model": "pale_forest:block/weathered_copper_lantern"
+    },
+    "hanging=true": {
+      "model": "pale_forest:block/weathered_copper_lantern_hanging"
+    }
+  }
+}

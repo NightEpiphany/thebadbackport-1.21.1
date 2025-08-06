@@ -1,0 +1,7 @@
+﻿{
+  "parent": "pale_forest:block/template_bars_cap_alt",
+  "textures": {
+    "bars": "pale_forest:block/oxidized_copper_bars",
+    "edge": "pale_forest:block/oxidized_copper_bars"
+  }
+}

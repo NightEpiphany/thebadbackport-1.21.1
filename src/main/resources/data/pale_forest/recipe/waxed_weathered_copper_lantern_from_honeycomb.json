@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "waxed_weathered_copper_lantern",
+  "ingredients": [
+    { "item": "pale_forest:weathered_copper_lantern"},
+    { "item": "minecraft:honeycomb"}
+  ],
+  "result": {
+    "count": 1,
+    "id": "pale_forest:waxed_weathered_copper_lantern"
+  }
+}
