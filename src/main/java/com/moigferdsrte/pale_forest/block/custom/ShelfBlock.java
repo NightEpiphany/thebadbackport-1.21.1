@@ -37,6 +37,7 @@ public class ShelfBlock extends BlockWithEntity implements Waterloggable {
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     public static final BooleanProperty POWERED = Properties.POWERED;
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
+    public static final BooleanProperty ALIGN = BooleanProperty.of("align_items_to_bottom");
     public static final BooleanProperty LEFT = BooleanProperty.of("left");
     public static final BooleanProperty RIGHT = BooleanProperty.of("right");
 
@@ -48,6 +49,7 @@ public class ShelfBlock extends BlockWithEntity implements Waterloggable {
                 .with(POWERED, false)
                 .with(LEFT, false)
                 .with(RIGHT, false)
+                .with(ALIGN, false)
                 .with(WATERLOGGED, false));
     }
 
@@ -282,6 +284,6 @@ public class ShelfBlock extends BlockWithEntity implements Waterloggable {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING, POWERED, WATERLOGGED, LEFT, RIGHT);
+        builder.add(FACING, POWERED, WATERLOGGED, LEFT, RIGHT, ALIGN);
     }
 }

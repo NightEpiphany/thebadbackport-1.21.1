@@ -12,6 +12,7 @@ import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.client.render.model.json.ModelTransformationMode;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.RotationAxis;
@@ -57,7 +58,11 @@ public class ShelfBlockEntityRenderer implements BlockEntityRenderer<ShelfBlockE
                         matrixStack.translate(-0.316145001F * l , 0.000001F * l, 0.0F);
                     }
                 }
-                matrixStack.scale(0.3301251F, 0.3301251F, 0.3301251F);
+                if (itemStack.isIn(ItemTags.BANNERS)) matrixStack.translate(0.0F, -0.10852022F, 0.0F);
+                if (entity.getCachedState().get(ShelfBlock.ALIGN))
+                    matrixStack.translate(0.0F, -0.145202F, 0.0F);
+                float size =  itemStack.isIn(ItemTags.BANNERS) ? 0.426412514F : 0.33201251F;
+                matrixStack.scale(size, size, size);
                 this.itemRenderer.renderItem(itemStack, ModelTransformationMode.FIXED, i, OverlayTexture.DEFAULT_UV, matrixStack, vertexConsumerProvider, entity.getWorld(), 0);
                 matrixStack.pop();
             }
